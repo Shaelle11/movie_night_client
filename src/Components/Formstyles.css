@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f5f5dc; 
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    background: #ebebeb;
+    padding: 30px;
+    border: 2px solid #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    border-radius: 10px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header img.pop {
+    width: 30%;
+    height: 30%;
+    margin: 0 10px;
+}
+
+h3 {
+    font-size: 2.5em;
+    color: #000;
+    font-family: 'Great Vibes', cursive;
+}
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 1.2em;
+    color: #333;
+    height: auto;
+    width: 20%;
+}
+
+.inp, select {
+    width: 80%;
+    padding: 10px;
+    background-color: #ebebeb;
+    border: 2px solid #010101;
+    border-radius: 5px;
+    font-size: 1em;
+    
+}
+.inp, select:focus{
+    background-color: #ebebeb;
+    border: 2px solid #010101;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

@@ -3,7 +3,7 @@ import axios from 'axios';
 import io from 'socket.io-client';
 import "./MovieVoting.css"
 
-const socket = io('http://localhost:5000'); // Adjust the URL based on your backend server
+const socket = io('https://movie-night-backend.vercel.app'); // Adjust the URL based on your backend server
 
 const MovieVoting = () => {
   const [movies, setMovies] = useState([
@@ -28,7 +28,7 @@ const MovieVoting = () => {
   }, []);
 
   const handleVote = (movieId) => {
-    axios.post('http://localhost:5000/vote', { movieId }, { withCredentials: true })
+    axios.post('https://movie-night-backend.vercel.app/vote', { movieId }, { withCredentials: true })
       .then(response => {
         console.log('Vote successful:', response.data);
       })

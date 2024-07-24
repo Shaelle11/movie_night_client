@@ -12,7 +12,9 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<InvitationForm setUser={setUser} />} />
                 <Route path="/invitation" element={<InvitationPage />}/>
+                <Route path="/movievoting" element={<MovieVoting />}/>
             </Routes>
+            <MovieVoting/>
         </Router>
     );
 };

@@ -14,7 +14,7 @@ const InvitationForm = ({ setUser }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:4568/invite', { title, name, passkey }, { withCredentials: true })
+        axios.post('https://movie-night-backend.vercel.app/invite', { title, name, passkey }, { withCredentials: true })
             .then(response => {
                 const { role, title, name } = response.data;
                 setUser({ role, title, name });

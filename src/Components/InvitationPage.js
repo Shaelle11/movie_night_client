@@ -76,7 +76,7 @@ const InvitationPage = () => {
 
     const handleSongSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:4568/submit-song', {
+        fetch('https://movie-night-backend.vercel.app/submit-song', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ const InvitationPage = () => {
         setInviteeLetter(newLetter);
         setShowAnimation(true); // Trigger animation when invitee letter is generated
     
-        fetch('http://localhost:4568/invitee', {
+        fetch('https://movie-night-backend.vercel.app/invitee', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -159,7 +159,8 @@ const InvitationPage = () => {
                         </div>
                         <button type="submit">Add Song</button>
                     </form>
-                    <p>Or <a href="YOUR_SPOTIFY_LINK" target="_blank" rel="noopener noreferrer" className='song_link'>click here</a> to add a song yourself, join our Spotify listening party.</p>
+                    <p>Or <a href="https://spotify.link/8dwSkx0KtLb" target="_blank" rel="noopener noreferrer" className='song_link'>click here</a> to add a song yourself, join our Spotify listening party.</p>
+                    <p>Let’s listen and choose the music together in real time.</p>
                     <FontAwesomeIcon icon={faCompactDisc} size="2x" className="icon" />
                 </div>
                 <div className="invite-section">

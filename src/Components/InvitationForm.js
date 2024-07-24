@@ -44,9 +44,9 @@ const InvitationForm = ({ setUser }) => {
                         <select id="title" value={title} onChange={(e) => setTitle(e.target.value)} required>
                             <option value="Lord">Lord</option>
                             <option value="Lady">Lady</option>
-                            <option value="Lady">Mr</option>
-                            <option value="Lady">Mrs</option>
-                            <option value="Lady">Batty</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Batty">Batty</option>
                         </select>
                     </div>
                     <div className="field">

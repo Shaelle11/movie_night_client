@@ -16,16 +16,16 @@ const MovieCarousel = ({ movies, onVote }) => {
         <div className="carousel">
             <button onClick={prevSlide} className="carousel-control left">‹</button>
             <div className="carousel-slides" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                {movies.map((movie, index) => (
+                {movies.map((movie) => (
                     <div
-                        key={movie.id}
-                        className={`carousel-slide ${index === currentIndex ? 'active' : ''}`}
+                        key={movie._id} // Ensure using '_id'
+                        className={`carousel-slide ${movie._id === movies[currentIndex]._id ? 'active' : ''}`}
                     >
                         <img src={movie.image} alt={movie.name} className="carousel-image" />
                         <h2>{movie.name}</h2>
-                        <p>{movie.genre}</p>
-                        <button onClick={() => onVote(movie.id)}>Vote</button>
-                        <p>Votes: {movie.votes}</p>
+                        <p className='genre'>{movie.genre}</p>
+                        <button onClick={() => onVote(movie._id)}>Vote</button>
+                        <p className='votes'>Votes: {movie.votes}</p>
                     </div>
                 ))}
             </div>

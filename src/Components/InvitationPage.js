@@ -177,13 +177,14 @@ Lady Whistledown
                             <>
                                 <h3>Hello Invite for {inviteeName} from {name}</h3>
                                 <p>{inviteeLetter}</p>
-                                <button className="btn" onClick={() => handleDownload('invitee-invitation', `${inviteeName}_invitation.png`)}>
-                                    <FontAwesomeIcon icon={faChampagneGlasses} size="1x" className="icon iconglass" />
-                                    Download Invitee's Invitation
-                                </button>
+                              
                             </>
                         )}
                     </div>
+                    <button className="btn" onClick={() => handleDownload('invitee-invitation', `${inviteeName}_invitation.png`)}>
+                                    <FontAwesomeIcon icon={faChampagneGlasses} size="1x" className="icon iconglass" />
+                                    Download Invitee's Invitation
+                                </button>
                 </div>
             </div>
         </div>

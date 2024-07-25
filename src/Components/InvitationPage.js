@@ -159,7 +159,7 @@ Lady Whistledown
                 <div className="spotify-section">
                     <h2>Add a Song to the Spotify Listening Party</h2>
                    
-                    <p><a href="https://spotify.link/8dwSkx0KtLb" target="_blank" rel="noopener noreferrer" className='song_link'>click here</a> to add your fave as you join our Spotify listening party.</p>
+                    <p><a href="https://spotify.link/FHozod6BwLb" target="_blank" rel="noopener noreferrer" className='song_link'>click here</a> to add your fave as you join our Spotify listening party.</p>
                     <p>Let’s listen and choose the music together in real time.</p>
                     <FontAwesomeIcon icon={faCompactDisc} size="2x" className="icon" />
                 </div>

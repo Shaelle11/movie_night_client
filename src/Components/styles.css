@@ -1,4 +1,6 @@
-/* Colors */
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
 :root {
     --primary-color: #989996; /* Bright Yellow-Green */
     --secondary-color: #EBEBEB; /* Orange */
@@ -37,6 +39,9 @@ body {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Oleo script";
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .inline-image {
@@ -89,7 +94,8 @@ body {
 text-decoration: none;
 font-weight: 600;
 color: #22ab26;
-font-family: 'Great Vibes';
+font-family: "Oleo script";
+font-weight: 400;
 font-size: 24px;
 }
 .btn:hover {

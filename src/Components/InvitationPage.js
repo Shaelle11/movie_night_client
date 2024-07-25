@@ -76,7 +76,7 @@ const InvitationPage = () => {
 
     const handleSongSubmit = (e) => {
         e.preventDefault();
-        fetch('https://movie-night-backend.vercel.app/submit-song', {
+        fetch('https://movie-night-backend-git-master-the-shaelles-projects.vercel.app/submit-song', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ const InvitationPage = () => {
         setInviteeLetter(newLetter);
         setShowAnimation(true); // Trigger animation when invitee letter is generated
     
-        fetch('https://movie-night-backend.vercel.app/invitee', {
+        fetch('https://movie-night-backend-git-master-the-shaelles-projects.vercel.app/invitee', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

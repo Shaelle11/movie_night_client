@@ -65,7 +65,7 @@ Lady Whistledown
     }, [role]);
 
     const handleDownload = (nodeId, filename) => {
-        if (inviteCount >= 2) {
+        if (inviteCount >= 3 ) {
             alert("You have reached the maximum number of downloads allowed.");
             return;
         }

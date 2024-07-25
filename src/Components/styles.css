@@ -162,6 +162,12 @@ font-size: 24px;
     animation: rotate 4s infinite linear;
     color: var(--quaternary-color);
 }
+.icon_white{
+    font-size: 2em;
+    margin: 10px;
+    animation: rotate 4s infinite linear;
+    color: #fff
+}
 
 @keyframes rotate {
     from {

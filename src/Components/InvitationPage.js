@@ -24,17 +24,27 @@ const InvitationPage = () => {
 
     useEffect(() => {
         const adminContent = `
-            It is with the utmost pleasure that I, Lady Whistledown, extend to you a most exclusive invitation. On the eve of July 26th,FOC, you are cordially summoned to partake in an evening of merriment and entertainment at our esteemed Games and Movie Night. Your presence is not merely requested; it is essential to ensure the evening's success.
+         Esteemed Administrators,
 
-            We shall commence our revelries promptly, and you are entreated to bring your wit, charm, and competitive spirit. Our gathering will be a delightful mélange of games, where strategy and cunning shall reign, followed by a cinematic experience that promises to be both enchanting and exhilarating.
+It is with the utmost pleasure that I, Lady Whistledown, extend to you a most exclusive invitation. On the eve of July 26th, you are cordially summoned to partake in an evening of merriment and entertainment at our esteemed Games and Movie Night. Your presence is not merely requested; it is essential to ensure the evening's success.
 
-            The festivities shall span a period of three hours, within which time I am certain we shall create memories to be cherished.
+We shall commence our revelries promptly, and you are entreated to bring your wit, charm, and competitive spirit. Our gathering will be a delightful mélange of games, where strategy and cunning shall reign, followed by a cinematic experience that promises to be both enchanting and exhilarating.
 
-            Pray, do not disappoint. Your attendance will undoubtedly elevate the evening to one of grandeur and delight.
+To ensure the smooth orchestration of the evening, I must humbly request your assistance in specific roles:
 
-            Yours most faithfully,
+Chris, please take charge of the media.
+Tunde, the snacks are on you.
+Eniola, your expertise in setup is greatly needed.
+Ini, kindly take charge of the order of events.
+Nehemiah, you would be incharge of hosting and relating with the audience.
+ Jonah and Joshua, please i would like to invite y'all to be our co-hosts for the games, more information will be passed across to you all personally, thank you
+The festivities shall span a period of 3 - 4 hours, within which time I am certain we shall create memories to be cherished.
 
-            Lady Whistledown
+Pray, do not disappoint. Your attendance and contributions will undoubtedly elevate the evening to one of grandeur and delight.
+
+Yours most faithfully,
+
+Lady Whistledown
         `;
 
         const guestContent = `
@@ -148,18 +158,8 @@ const InvitationPage = () => {
             <div className="side-section">
                 <div className="spotify-section">
                     <h2>Add a Song to the Spotify Listening Party</h2>
-                    <form onSubmit={handleSongSubmit}>
-                        <div className="field">
-                            <label htmlFor="singer">Artist:</label>
-                            <input type="text" id="singer" value={singer} onChange={(e) => setSinger(e.target.value)} required />
-                        </div>
-                        <div className="field">
-                            <label htmlFor="song">Song:</label>
-                            <input type="text" id="song" value={song} onChange={(e) => setSong(e.target.value)} required />
-                        </div>
-                        <button type="submit">Add Song</button>
-                    </form>
-                    <p>Or <a href="https://spotify.link/8dwSkx0KtLb" target="_blank" rel="noopener noreferrer" className='song_link'>click here</a> to add a song yourself, join our Spotify listening party.</p>
+                   
+                    <p><a href="https://spotify.link/8dwSkx0KtLb" target="_blank" rel="noopener noreferrer" className='song_link'>click here</a> to add your fave as you join our Spotify listening party.</p>
                     <p>Let’s listen and choose the music together in real time.</p>
                     <FontAwesomeIcon icon={faCompactDisc} size="2x" className="icon" />
                 </div>
